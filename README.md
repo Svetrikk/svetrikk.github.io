@@ -1,5 +1,5 @@
-# https://svetrikk.github.io/admagnet-solutions/
-Zdrojový kód pre stránku https://svetrikk.github.io/admagnet-solutions/
+# https://svetrikk.github.io/
+Zdrojový kód pre stránku https://svetrikk.github.io/
 
 ## Licencia
 Zdrojový kód je licencovaný pod [MIT Licencia](http://opensource.org/licenses/mit-license.php).
