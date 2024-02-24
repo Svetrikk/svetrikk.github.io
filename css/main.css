@@ -1,5 +1,6 @@
 body {
     background-color: #1e1e1e;
+    font-family: arial;
 }
 
 body:after {
@@ -17,7 +18,7 @@ a {
 
 .header-main {
     width: 100%;
-    height: 60px;
+    height: 80px;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -40,6 +41,42 @@ a {
     height: 100%;
 }
 
+
+.header-main-nav a::before,
+.header-main-nav a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+
+.header-main-nav a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #3E8914;
+    border-right: 3px solid #2E640F;
+    transform: translate(-100%, 50%);
+}
+  
+.header-main-nav a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #2E640F;
+    border-left: 3px solid #3E8914;
+    transform: translate(100%, -50%)
+}
+  
+.header-main-nav a:hover:before,
+.header-main-nav a:hover:after {
+    transform: translate(0,0);
+    opacity: 1;
+}
+
+
 .header-main-nav ul {
     margin-left: 30px; /*** medzera medzi logom a menu ***/
 }
@@ -50,16 +87,17 @@ a {
 }
 
 .header-main-nav ul li a {
-    padding: 0 10px;
+    padding: 15px 10px;
     font-family: arial;
-    line-height: 60px;
+    line-height: 80px;
     color: #000;
-    display: block; /*** na link sa da kliknut aj pod a nad textom ***/
     height: 100%;
+    font-size: 20px;
+    position: relative; /*** sucast animacie ***/
 }
 
 .header-main-nav ul li a:hover {
-    color: red;
+    color: #2E640F;
 }
 
 .header-main-sm {
@@ -80,4 +118,11 @@ a {
 
 .header-main-sm-ig:hover {
     background-image: url(../img/instagram-color.png);
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
 }
