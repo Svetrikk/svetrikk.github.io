@@ -27,7 +27,7 @@ a {
 .header-main-logo {
     width: fit-content;
     height: 100%;
-    padding-left: 40px; /*** Obsadenie loga na lavej strane ***/
+    padding-left: 20px; /*** Obsadenie loga na lavej strane ***/
     display: flex;
 }
 
@@ -78,7 +78,7 @@ a {
 
 
 .header-main-nav ul {
-    margin-left: 30px; /*** medzera medzi logom a menu ***/
+    margin-left: 10px; /*** medzera medzi logom a menu ***/
 }
 
 .header-main-nav ul li {
@@ -125,4 +125,42 @@ h1 {
     font-size: 50px;
     text-align: center;
     padding-top: 50px;
+}
+
+.phone-nav-links {
+    background: red;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.hide {
+    display: none;
+}
+
+.hamburger-icon {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .header-main-nav {
+        display: none;
+    }
+
+    .header-main-sm {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .hamburger-icon {
+        display: none;
+    }
+
+    .phone-nav {
+        display: none;
+    }
 }
